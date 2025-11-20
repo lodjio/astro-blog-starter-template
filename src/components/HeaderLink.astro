@@ -12,13 +12,25 @@ const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
 <a href={href} class:list={[className, { active: isActive }]} {...props}>
 	<slot />
 </a>
+
 <style>
 	a {
 		display: inline-block;
 		text-decoration: none;
+		font-family: 'Comfortaa', sans-serif;
+		color: #ffffff;
+		font-size: 1rem;
+		letter-spacing: 0.03em;
+		padding: 0.25rem 0.4rem;
+		transition: opacity 0.2s ease;
 	}
+
+	a:hover {
+		opacity: 0.75;
+	}
+
 	a.active {
-		font-weight: bolder;
-		text-decoration: underline;
+		color: #0B2CFF; /* your logo blue */
+		font-weight: 700;
 	}
 </style>
