@@ -22,7 +22,7 @@ const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
 		font-size: 1rem;
 		letter-spacing: 0.03em;
 		padding: 0.25rem 0.4rem;
-		transition: opacity 0.2s ease;
+		transition: opacity 0.2s ease, color 0.2s ease;
 	}
 
 	a:hover {
@@ -30,7 +30,7 @@ const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
 	}
 
 	a.active {
-		color: #0B2CFF; /* your logo blue */
+		color: #0B2CFF; /* brand blue */
 		font-weight: 700;
 	}
 </style>
